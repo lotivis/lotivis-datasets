@@ -1,4 +1,4 @@
-export function flatDataset(d) {
+export function datasetToData(d) {
   if (Array.isArray(d)) {
     throw new Error("expecting object. found array");
   }
@@ -23,6 +23,6 @@ export function flatDataset(d) {
  * @param {*} ds
  * @returns {Array} The flat version
  */
-export function flatDatasets(ds) {
+export function datasetsToData(ds) {
   return ds.reduce((memo, d) => memo.concat(flatDataset(d)), []);
 }
