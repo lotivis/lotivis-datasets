@@ -12,7 +12,7 @@ function Dataset(item) {
   return set;
 }
 
-export function toDataset(data) {
+export function toDatasets(data) {
   let datasets = [],
     item,
     set,
