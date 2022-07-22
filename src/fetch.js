@@ -1,7 +1,7 @@
 import { datasetToData, datasetsToData } from "./to.data";
 
-async function fetchJSON(path) {
-  return fetch(path).then((res) => res.json);
+export async function fetchJSON(path) {
+  return fetch(path).then((res) => res.json());
 }
 
 export async function fetchDataset(path) {

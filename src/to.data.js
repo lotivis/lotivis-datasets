@@ -24,5 +24,5 @@ export function datasetToData(d) {
  * @returns {Array} The flat version
  */
 export function datasetsToData(ds) {
-  return ds.reduce((memo, d) => memo.concat(flatDataset(d)), []);
+  return ds.reduce((memo, d) => memo.concat(datasetToData(d)), []);
 }
